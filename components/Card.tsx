@@ -9,15 +9,17 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({ children, title, className }) => {
   return (
     <div
-      className={`rounded-2xl bg-green-400  p-8 flex flex-col shadow-xl ${className}`}
+      className={`rounded-2xl bg-indigo-300  p-8 flex flex-col shadow-xl ${className}`}
     >
-      <div className='mb-4'>
-        {typeof title === 'string' ? (
-          <h2 className='text-2xl font-extrabold'>{title}</h2>
-        ) : (
-          title
-        )}
-      </div>
+      {title && (
+        <div className='mb-2'>
+          {typeof title === 'string' ? (
+            <h2 className='text-2xl font-extrabold'>{title}</h2>
+          ) : (
+            title
+          )}
+        </div>
+      )}
 
       {children}
     </div>

@@ -1,14 +1,12 @@
 import React from 'react';
+import { Card } from './Card';
 
 interface TodoListProps {}
 
 export const TodoList: React.FC<TodoListProps> = ({}) => {
   return (
-    <div className='mt-8 bg-green-300 p-8 rounded-2xl shadow-2xl'>
-      <h2 className='text-2xl font-bold list-disc'>
-        list of cool things I want to try/add:
-      </h2>
-      <ul className='mt-4 list-disc text-lg'>
+    <Card title='list of cool things I want to try/add:'>
+      <ul className='list-disc text-lg pl-4'>
         <li>
           <s>tailwind</s>
         </li>
@@ -18,6 +16,6 @@ export const TodoList: React.FC<TodoListProps> = ({}) => {
         <li>react query</li>
         <li>tRCP - typesafe api</li>
       </ul>
-    </div>
+    </Card>
   );
 };

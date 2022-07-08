@@ -1,10 +1,7 @@
 import { ListItem } from '../components/List';
 
 export const todoList: ListItem[] = [
-  { text: 'tailwind 🤠', done: true },
-  { text: 'make this page not look like trash 🥲' },
-  { text: 'zod - object validation with cool typescript features 🤓' },
-  { text: 'next.js backend 😮' },
-  { text: 'tRCP - typesafe api 🤨' },
-  { text: 'some way to stora data (like this list) 😬' },
+  { text: 'list component ✅', done: true },
+  { text: 'some layout wrapper 📊' },
+  { text: '"hero" like component with my photo and description 🙀' },
 ];

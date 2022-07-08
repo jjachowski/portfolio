@@ -1,12 +1,15 @@
 import React from 'react';
 import { Card } from './Card';
+import { List, ListItem } from './List';
+interface TodoListProps {
+  title: string;
+  items: ListItem[];
+}
 
-interface TodoListProps {}
-
-export const TodoList: React.FC<TodoListProps> = ({}) => {
+export const TodoList: React.FC<TodoListProps> = ({ title, items }) => {
   return (
-    <Card title='list of cool things I want to try/add:'>
-      <ul className='list-disc text-lg pl-4'>
+    <Card title={title}>
+      {/* <ul className='list-disc text-lg pl-4'>
         <li>
           <s>tailwind</s>
         </li>
@@ -15,7 +18,10 @@ export const TodoList: React.FC<TodoListProps> = ({}) => {
         <li>next.js backend</li>
         <li>react query</li>
         <li>tRCP - typesafe api</li>
-      </ul>
+        <li>znaleźć sposób na przechowywanie treści 😬</li>
+      </ul> */}
+
+      <List items={items} className='text-xl' />
     </Card>
   );
 };

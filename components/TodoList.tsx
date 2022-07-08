@@ -7,6 +7,12 @@ interface TodoListProps {
   superCool?: boolean;
 }
 
+const sortItems = (a: ListItem, b: ListItem) => {
+  if (a.done) return -1;
+  if (b.done === a.done) return 0;
+  return 1;
+};
+
 export const TodoList: React.FC<TodoListProps> = ({
   title,
   items,
@@ -14,7 +20,11 @@ export const TodoList: React.FC<TodoListProps> = ({
 }) => {
   return (
     <Card title={title}>
-      <List items={items} className='text-xl' superCool={superCool} />
+      <List
+        items={items.sort((a, b) => sortItems(a, b))}
+        className='text-xl'
+        superCool={superCool}
+      />
     </Card>
   );
 };

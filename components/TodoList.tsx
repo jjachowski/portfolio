@@ -7,11 +7,10 @@ interface TodoListProps {
   superCool?: boolean;
 }
 
-const sortItems = (a: ListItem, b: ListItem) => {
-  if (a.done) return -1;
-  if (b.done === a.done) return 0;
-  return 1;
-};
+// *magic* sort expects negative value when first item is lesser than second
+// so we parse boolean nullable values to boolean then to 0 or 1,
+// then we perform subtraction
+const sortItems = (a: ListItem, b: ListItem) => +!!b.done - +!!a.done;
 
 export const TodoList: React.FC<TodoListProps> = ({
   title,
@@ -22,6 +21,7 @@ export const TodoList: React.FC<TodoListProps> = ({
     <Card title={title}>
       <List
         items={items.sort((a, b) => sortItems(a, b))}
+        // items={items}
         className='text-xl'
         superCool={superCool}
       />

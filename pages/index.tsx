@@ -14,6 +14,7 @@ const Home: NextPage = () => {
         <TodoList
           items={thingsToTry}
           title='list of cool things I wanna try!'
+          superCool
         />
         <TodoList items={todoList} title='todo list on this page' />
       </Stack>

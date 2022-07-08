@@ -4,24 +4,17 @@ import { List, ListItem } from './List';
 interface TodoListProps {
   title: string;
   items: ListItem[];
+  superCool?: boolean;
 }
 
-export const TodoList: React.FC<TodoListProps> = ({ title, items }) => {
+export const TodoList: React.FC<TodoListProps> = ({
+  title,
+  items,
+  superCool,
+}) => {
   return (
     <Card title={title}>
-      {/* <ul className='list-disc text-lg pl-4'>
-        <li>
-          <s>tailwind</s>
-        </li>
-        <li>make this page not look like trash</li>
-        <li>zod - object validation with cool typescript features</li>
-        <li>next.js backend</li>
-        <li>react query</li>
-        <li>tRCP - typesafe api</li>
-        <li>znaleźć sposób na przechowywanie treści 😬</li>
-      </ul> */}
-
-      <List items={items} className='text-xl' />
+      <List items={items} className='text-xl' superCool={superCool} />
     </Card>
   );
 };

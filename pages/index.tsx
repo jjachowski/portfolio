@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import { Stack } from '../components/Stack';
 import { TodoList } from '../components/TodoList';
 import { thingsToTry } from '../data/thingsToTryList';
 import { todoList } from '../data/todoList';
@@ -10,14 +9,14 @@ const Home: NextPage = () => {
       <h1 className='text-3xl font-bold p-8 '>
         {`hello, I'm Jakub and this will be my portfolio!`}
       </h1>
-      <Stack spacing={4}>
+      <div className='flex flex-col space-y-4'>
         <TodoList
           items={thingsToTry}
           title='list of cool things I wanna try!'
           superCool
         />
         <TodoList items={todoList} title='todo list on this page' />
-      </Stack>
+      </div>
     </div>
   );
 };

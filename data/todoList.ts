@@ -5,4 +5,5 @@ export const todoList: ListItem[] = [
   { text: 'some layout wrapper 📊', done: true },
   { text: '"hero" like component with my photo and description 🙀' },
   { text: 'deploy to vercel 🚀', done: true },
+  { text: 'add "commit-streak" counter' },
 ];

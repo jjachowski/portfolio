@@ -7,7 +7,9 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className='w-screen flex justify-center'>
-      <div className='w-full px-2 sm:w-3/4 lg:w-2/3 max-w-5xl'>{children}</div>
+      <div className='flex flex-col w-full px-2 sm:w-3/4 lg:w-2/3 max-w-5xl'>
+        {children}
+      </div>
     </div>
   );
 };

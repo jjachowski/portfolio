@@ -7,4 +7,5 @@ export const thingsToTry: ListItem[] = [
   { text: 'next.js backend 😮' },
   { text: 'tRCP - typesafe api 🤨' },
   { text: 'some way to stora data (like this list) 😬' },
+  { text: 'create npm packege (react-stars or something)' },
 ];

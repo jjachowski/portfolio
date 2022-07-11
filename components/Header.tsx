@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         alt='Picture of a really swell guy, author of this website, magnificent beard and slick hairstyle'
       />
       <div>
-        <h1 className='text-xl sm:text-2xl font-mono font-bold mb-1'>
+        <h1 className='text-xl sm:text-2xl  font-bold mb-1'>
           {`Hi, I'm Jakub and this is my portfolio website`}
         </h1>
         <GithubLink />

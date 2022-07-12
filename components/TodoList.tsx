@@ -18,7 +18,8 @@ export const TodoList: React.FC<TodoListProps> = ({
   superCool,
 }) => {
   return (
-    <Card title={title}>
+    <Card title={title} isSpecial={superCool}>
+      lmao
       <List
         items={items.sort((a, b) => sortItems(a, b))}
         // items={items}

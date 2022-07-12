@@ -9,7 +9,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
     <div className=' flex flex-row items-center my-4'>
       <Image
         src={'/myself.jpg'}
-        className='w-28 rounded-full shadow-2xl mr-4 b border-solid border-4 border-indigo-300'
+        className='w-28 rounded-full shadow-2xl mr-4 b border-solid border-4 border-pink-900'
         alt='Picture of a really swell guy, author of this website, magnificent beard and slick hairstyle'
       />
       <div>

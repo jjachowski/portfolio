@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Create T3 App
 
-## What's the point
-
-This page exists so I procrastinate less, try out new stuff and procrastinate less.
+This is an app bootstrapped according to the [init.tips](https://init.tips) stack, also known as the T3-Stack.

@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    // url      = "mongodb://mongo:gfqb2GFLTFf1bdYGEZzD@containers-us-west-73.railway.app:7628"
+    url      = "postgresql://postgres:QlGNEaVPon8yX9tHKkjC@containers-us-west-76.railway.app:6652/railway"
+    // url      = env("DATABASE_URL")
+}
+
+model blogposts {
+    id   Int    @id @default(autoincrement())
+    text String
+}

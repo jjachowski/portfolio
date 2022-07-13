@@ -34,11 +34,16 @@ export const getCommitStreak = async (): Promise<number> => {
   }
 
   const response = await getCommits();
-  if (response.status === 200) {
+  if (response.status === 200 && response.data) {
     let previous = new Date();
 
     for (let i = 0; i < response.data.length; i++) {
-      let current = new Date(response.data[i].commit.author.date);
+      const currentData = response.data[i];
+      if (!currentData) {
+        continue;
+      }
+
+      let current = new Date(currentData.commit.author.date);
       let diff = previous.getTime() - current.getTime();
 
       if (diff > twoDays) {

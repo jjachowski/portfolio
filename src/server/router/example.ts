@@ -19,3 +19,17 @@ export const exampleRouter = createRouter()
       return await ctx.prisma.blogposts.findMany();
     },
   });
+
+export const blogPostRouter = createRouter()
+  .query('posts', {
+    async resolve({ ctx }) {
+      return await ctx.prisma.blogposts.findMany();
+    },
+  })
+  .query('post', {
+    input: z.object({ id: z.number() }),
+    async resolve({ ctx, input }) {
+      console.log('CTXXXXX:', ctx);
+      return await ctx.prisma.blogposts.findFirst({ where: { id: input.id } });
+    },
+  });

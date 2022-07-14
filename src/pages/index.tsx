@@ -6,13 +6,18 @@ import { TodoList } from '../components/TodoList';
 import { blogTodo } from '../data/blogCreationTodo';
 import { thingsToTry } from '../data/thingsToTryList';
 import { todoList } from '../data/todoList';
+import { trpc } from '../utils/trpc';
 
 const Home: NextPage = () => {
+  // const { data, isLoading } = trpc.useQuery(['blogPost.posts']);
   return (
     <Layout>
       <Header />
       <CommitStreak />
       <div className='flex flex-col space-y-4'>
+        {/* <>
+          Data: {JSON.stringify(data)}, isLoading: {isLoading}
+        </> */}
         <TodoList
           items={blogTodo}
           title='next cool feature - blog posts'

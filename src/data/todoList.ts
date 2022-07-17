@@ -11,4 +11,7 @@ export const todoList: ListItem[] = [
   { text: 'add "commit-streak" counter', done: true },
   { text: 'add text editor to add these items not by commit 🤗' },
   { text: 'add something like "blog posts" about creating this website' },
+  { text: 'create model in db for todo lists', done: true },
+  { text: 'move todolists to db' },
+  { text: 'find cheapest db (with est free plan) possible 🧅🧅🧅' },
 ];

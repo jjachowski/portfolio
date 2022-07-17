@@ -15,3 +15,17 @@ model blogposts {
     title String
     text  String
 }
+
+model TodoLists {
+    id        Int        @id @default(autoincrement())
+    title     String
+    todoItems TodoItem[]
+}
+
+model TodoItem {
+    id         Int       @id @default(autoincrement())
+    text       String
+    done       Boolean
+    todoList   TodoLists @relation(fields: [todoListId], references: [id])
+    todoListId Int
+}

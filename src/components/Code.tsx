@@ -13,7 +13,7 @@ export const Code: React.FC<CodeProps> = ({ children }) => {
       <SyntaxHighlighter
         style={synthwave84}
         language={'tsx'}
-        customStyle={{ marginTop: 0, marginBottom: 0 }}
+        customStyle={{ marginTop: 0, marginBottom: 0, borderRadius: 10 }}
       >
         {children}
       </SyntaxHighlighter>

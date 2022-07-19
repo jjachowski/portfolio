@@ -34,7 +34,6 @@ const Home: NextPage = () => {
       <CommitStreak />
       <div className='flex flex-col space-y-4'>
         <Code>{text}</Code>
-
         <TodoList
           items={blogTodo}
           title='next cool feature - blog posts'

@@ -4,7 +4,7 @@ export const thingsToTry: ListItem[] = [
   { text: 'tailwind 🤠', done: true },
   { text: 'make this page not look like trash 🥲' },
   { text: 'zod - object validation with cool typescript features 🤓' },
-  { text: 'next.js backend 😮' },
+  { text: 'next.js backend 😮', done: true },
   { text: 'tRCP - typesafe api 🤨' },
   { text: 'some way to stora data (like this list) 😬' },
   { text: 'create npm packege (react-stars or something)' },

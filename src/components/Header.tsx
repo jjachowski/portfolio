@@ -14,7 +14,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
       />
       <div>
         <h1 className="text-xl sm:text-2xl  font-bold mb-1">
-          {`Hi, I'm Jakub and this is my portfolio website`}
+          {`Hi, my name is Jakub and this is my website`}
         </h1>
         <GithubLink />
       </div>

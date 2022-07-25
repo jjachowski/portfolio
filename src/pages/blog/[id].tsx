@@ -4,7 +4,7 @@ import { Layout } from '../../components/Layout';
 import { prisma } from '../../server/db/client';
 
 export async function getStaticPaths() {
-  const postIds = await prisma.blogposts.findMany({ select: { id: true } });
+  const postIds = await prisma.blogPost.findMany({ select: { id: true } });
   return {
     paths: postIds.map((x) => ({
       params: {
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 export const getStaticProps = async (
   context: GetStaticPropsContext<{ id: string }>
 ) => {
-  const post = await prisma.blogposts.findFirst({
+  const post = await prisma.blogPost.findFirst({
     where: { id: Number(context.params?.id) },
   });
   return {

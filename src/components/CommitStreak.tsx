@@ -13,7 +13,7 @@ export const CommitStreak: React.FC<CommitStreakProps> = ({}) => {
     test();
   }, []);
   return (
-    <h2 className='text-xl font-mono my-4 h-6'>
+    <h2 className='text-lg font-mono my-4 h-6'>
       {streak ? `daily-commits streak: ${streak}` : ''}
     </h2>
   );

@@ -16,20 +16,20 @@ export const exampleRouter = createRouter()
   })
   .query('getAll', {
     async resolve({ ctx }) {
-      return await ctx.prisma.blogposts.findMany();
+      return await ctx.prisma.blogPost.findMany();
     },
   });
 
 export const blogPostRouter = createRouter()
   .query('posts', {
     async resolve({ ctx }) {
-      return await ctx.prisma.blogposts.findMany();
+      return await ctx.prisma.blogPost.findMany();
     },
   })
   .query('post', {
     input: z.object({ id: z.number() }),
     async resolve({ ctx, input }) {
       console.log('CTXXXXX:', ctx);
-      return await ctx.prisma.blogposts.findFirst({ where: { id: input.id } });
+      return await ctx.prisma.blogPost.findFirst({ where: { id: input.id } });
     },
   });

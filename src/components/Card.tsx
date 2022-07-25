@@ -15,10 +15,10 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`rounded-2xl px-6 py-4 sm:px-12 sm:py-8 bg-indigo-100 border-solid  flex flex-col shadow-xl ${
+      className={`rounded-2xl px-6 py-4 sm:px-12 sm:py-8  border-solid  flex flex-col shadow-xl border-4 dark:text-gray-300 ${
         isSpecial
-          ? ' border-4 border-pink-300 bg-pink-100 shadow-2xl'
-          : 'border-4 border-indigo-200'
+          ? ' shadow-2xl border-pink-300 dark:border-pink-500 bg-pink-100 dark:bg-pink-900 '
+          : ' border-indigo-600 dark:bg-indigo-900'
       } ${className}`}
     >
       {title && (

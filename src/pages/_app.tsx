@@ -4,13 +4,17 @@ import type { AppRouter } from '../server/router';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import superjson from 'superjson';
 import '../styles/globals.css';
-import { SessionProvider } from 'next-auth/react'
+import { SessionProvider } from 'next-auth/react';
 
-const MyApp: AppType = ({ Component, pageProps: { session, ...pageProps } }) => {
-  return (<SessionProvider session={session}>
-<Component {...pageProps} />
-  </SessionProvider>)
-  
+const MyApp: AppType = ({
+  Component,
+  pageProps: { session, ...pageProps },
+}) => {
+  return (
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  );
 };
 
 const getBaseUrl = () => {

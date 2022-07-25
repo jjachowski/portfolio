@@ -15,7 +15,11 @@ export const GithubLink: React.FC<GithubLinkProps> = ({ className }) => {
       className={`flex flex-row items-end cursor-pointer hover:underline font-mono text-xs ${className}`}
     >
       Check out my
-      <Image className='h-5 ml-1' src='/GitHub_Logo.png' alt='github icon' />
+      <Image
+        className='h-4 ml-1 bg-white rounded-full'
+        src='/GitHub_Logo.png'
+        alt='github icon'
+      />
     </div>
   );
 };

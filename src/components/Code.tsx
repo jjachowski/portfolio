@@ -9,7 +9,7 @@ type CodeProps = {
 
 export const Code: React.FC<CodeProps> = ({ children }) => {
   return (
-    <div className='rounded-2xl overflow-hidden border-solid border-4 border-green-900'>
+    <div className='rounded-2xl overflow-hidden border-solid border-4 border-green-700'>
       <SyntaxHighlighter
         style={tomorrow}
         language={'tsx'}

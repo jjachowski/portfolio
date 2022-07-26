@@ -19,10 +19,8 @@ export const TodoList: React.FC<TodoListProps> = ({
 }) => {
   return (
     <Card title={title} isSpecial={superCool}>
-      lmao
       <List
         items={items.sort((a, b) => sortItems(a, b))}
-        // items={items}
         className='text-xl'
         superCool={superCool}
       />

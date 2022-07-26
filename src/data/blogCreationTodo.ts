@@ -8,4 +8,5 @@ export const blogTodo: ListItem[] = [
   { text: 'how to add new records to database' },
   { text: 'somehow display code fragments', done: true },
   { text: 'create page for displaying posts', done: true },
+  { text: 'how to store blogpost and then render its content' },
 ];

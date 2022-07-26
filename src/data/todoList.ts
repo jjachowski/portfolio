@@ -14,4 +14,6 @@ export const todoList: ListItem[] = [
   { text: 'create model in db for todo lists', done: true },
   { text: 'move todolists to db' },
   { text: 'find cheapest db (with est free plan) possible 🧅🧅🧅' },
+  { text: 'some text editor for reating posts' },
+  { text: 'editing/updating todos via page' },
 ];

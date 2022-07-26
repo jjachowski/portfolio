@@ -7,7 +7,6 @@ import { Links } from '../components/Links';
 import { Login } from '../components/Login';
 import { TodoList } from '../components/TodoList';
 import { blogTodo } from '../data/blogCreationTodo';
-import { codeSample } from '../data/codeSampleText';
 import { thingsToTry } from '../data/thingsToTryList';
 import { todoList } from '../data/todoList';
 
@@ -19,7 +18,6 @@ const Home: NextPage = () => {
       <CommitStreak />
       <Links />
       <div className='flex flex-col space-y-4'>
-        <Code>{codeSample}</Code>
         <TodoList items={blogTodo} title='current *big* feature' superCool />
         <TodoList items={thingsToTry} title='cool things to try' />
         <TodoList items={todoList} title='todo for this page' />

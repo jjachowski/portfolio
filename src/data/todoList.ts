@@ -15,4 +15,5 @@ export const todoList: ListItem[] = [
   { text: 'find cheapest db (with est free plan) possible 🧅🧅🧅', done: true },
   { text: 'some text editor for reating posts' },
   { text: 'editing/updating todos via page' },
+  { text: 'create cool snippets' },
 ];

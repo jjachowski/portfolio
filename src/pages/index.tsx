@@ -3,6 +3,7 @@ import { Code } from '../components/Code';
 import { CommitStreak } from '../components/CommitStreak';
 import { Header } from '../components/Header';
 import { Layout } from '../components/Layout';
+import { Links } from '../components/Links';
 import { Login } from '../components/Login';
 import { TodoList } from '../components/TodoList';
 import { blogTodo } from '../data/blogCreationTodo';
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Login />
       <Header />
       <CommitStreak />
+      <Links />
       <div className='flex flex-col space-y-4'>
         <Code>{codeSample}</Code>
         <TodoList items={blogTodo} title='current *big* feature' superCool />

@@ -2,10 +2,13 @@ import React from 'react';
 import { Layout } from '../../components/Layout';
 import { Button, ButtonType } from '../../components/Button';
 import { Title } from '../../components/typography/Title';
+import { useComponentPainText } from '../../hooks/useComponentPlainText';
+import { Code } from '../../components/Code';
 
 type ButtonsProps = {};
 
 const Buttons: React.FC<ButtonsProps> = () => {
+  const { data, loading } = useComponentPainText('Button.tsx');
   const buttons: ButtonType[] = ['accent', 'danger', 'default', 'submit'];
   return (
     <Layout>
@@ -25,7 +28,7 @@ const Buttons: React.FC<ButtonsProps> = () => {
           </div>
         ))}
       </div>
-      {/* <Code></Code> */}
+      {data && <Code>{data}</Code>}
     </Layout>
   );
 };

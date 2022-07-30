@@ -10,4 +10,5 @@ export const thingsToTry: ListItem[] = [
   { text: 'react-spring (for cool animations)' },
   { text: 'buy a domain', done: true },
   { text: 'email authentication - nextauth', done: true },
+  { text: 'auto-animate animate elements with two lines of code' },
 ];

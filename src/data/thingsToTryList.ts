@@ -11,4 +11,5 @@ export const thingsToTry: ListItem[] = [
   { text: 'create npm packege (react-stars or something)' },
   { text: 'react-spring (for cool animations)' },
   { text: 'qwik 🤯' },
+  { text: 'auto-animate animate elements with two lines of code' },
 ];

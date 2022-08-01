@@ -21,8 +21,8 @@ const Buttons: React.FC<ButtonsProps> = () => {
       <div className='flex flex-col'>
         {buttons.map((x) => (
           <div className='mb-10 flex flex-row justify-around' key={x}>
-            <Button type={x}>{x}</Button>
-            <Button type={x} animated>
+            <Button style={x}>{x}</Button>
+            <Button style={x} animated>
               {x} animated
             </Button>
           </div>

@@ -10,7 +10,9 @@ const Add: React.FC<AddProps> = () => {
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(e.target.value);
   };
-  const save = () => {};
+  const handleClick = () => {
+    console.log('click');
+  };
   return (
     <Layout>
       <h1 className='text-3xl my-10'>here I test text area component</h1>
@@ -21,13 +23,9 @@ const Add: React.FC<AddProps> = () => {
           className='h-full w-full p-2 bg-teal-100 dark:bg-teal-900'
         />
       </div>
-      <div className='flex flex-row justify-end'>
-        <Button animated>default</Button>
-        <Button animated type='danger'>
-          danger
-        </Button>
-        <Button animated type='accent'>
-          accent
+      <div className='flex flex-row justify-end mt-4'>
+        <Button style='submit' onClick={handleClick} animated type='submit'>
+          submit
         </Button>
       </div>
     </Layout>

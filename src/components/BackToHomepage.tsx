@@ -5,7 +5,7 @@ type BackToHomepageProps = {};
 
 export const BackToHomepage: React.FC<BackToHomepageProps> = () => {
   return (
-    <div className='fixed bottom-2 right-2 sm:bottom-4 sm:right-4 z-10 rounded-full p-2 shadow-lg bg-white dark:bg-zinc-800 bg-opacity-70'>
+    <div className='fixed bottom-2 right-2 sm:bottom-4 sm:right-4 z-10 rounded-full p-2 shadow-lg bg-white dark:bg-zinc-800 bg-opacity-80 border-2 border-pink-300'>
       <Link href='/'>
         <div className='flex flex-row'>
           <BiHomeHeart />
